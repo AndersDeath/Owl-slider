@@ -1,0 +1,74 @@
+
+/* Owl Slider v0.0.1 alpha | VNBStudio.ru */
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+body {
+  background-image: url('../img/bg.jpg');
+  background-position: center;
+}
+
+.logo {
+  width: 500px;
+  height: 100px;
+  background-image: url('../img/logo.png');
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  background-size: contain;
+  padding: 0 0 150px 0;
+}
+
+.OWL-slider, .OWL-sliderEl {
+  background-color: #494949;
+  border-radius: 15px;
+  border: 5px solid #eee;
+  -webkit-box-shadow: -2px 4px 17px -1px rgba(0,0,0,0.49);
+  -moz-box-shadow: -2px 4px 17px -1px rgba(0,0,0,0.49);
+  box-shadow: -2px 4px 17px -1px rgba(0,0,0,0.49);
+}
+
+.OWL-sliderEl {
+  display: none;
+}
+.OWL-sliderEl.active {
+  display: block;
+}
+
+.OWL-sliderEl  a {
+  display: block;
+  border: 1px solid #000;
+  text-decoration: none;
+  color:#fff;
+  background: #000;
+  float: right;
+}
+
+.OWL-slider > div {
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+}
+.OWL-slider > span {
+  margin-top: 315px;
+  display: block;
+  width: 750px;
+  height: 25px;
+  z-index: 99;
+  position: absolute;
+  text-align: center;
+}
+.OWL-slider > span > em {
+  border-radius: 15px;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+.OWL-slider > span > em:not(:last-child){
+  margin-right: 5px;
+}
+.OWL-slider > span > em.active {
+  background-color: #fff;
+}
